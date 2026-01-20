@@ -1,17 +1,56 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Devops learning</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colourful Frontend</title>
+  <style>
+    body { margin:0; font-family: 'Poppins', sans-serif; }
+    header {
+      background: linear-gradient(135deg, #ff6a00, #ee0979);
+      color:white; text-align:center; padding:3rem;
+    }
+    nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold; }
+    section { padding:3rem; text-align:center; }
+    .card {
+      display:inline-block; background:#fff; margin:1rem; padding:2rem;
+      border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2);
+      width:250px;
+    }
+    .card h2 { color:#ee0979; }
+    footer {
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      color:white; text-align:center; padding:1rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hi Team</h1>
+  <header>
+    <h1>Welcome to My Colourful Site</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-  <button onclick="loadUsers()">Load Users</button>
-  <button onclick="loadOrders()">Load Orders</button>
+  <section>
+    <div class="card">
+      <h2>🔥 Bright</h2>
+      <p>Bold colours that stand out.</p>
+    </div>
+    <div class="card">
+      <h2>🌈 Fun</h2>
+      <p>Playful gradients and shapes.</p>
+    </div>
+    <div class="card">
+      <h2>✨ Modern</h2>
+      <p>Clean design with flair.</p>
+    </div>
+  </section>
 
-  <pre id="result"></pre>
-
-  <script src="../src/app.js"></script>
+  <footer>
+    <p>&copy; 2026 Colourful Frontend</p>
+  </footer>
 </body>
 </html>
