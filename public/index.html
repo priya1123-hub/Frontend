@@ -1,17 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>AWS Microservices App</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>AWS Microservices App</title>
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'
+  viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    background: linear-gradient(to right, #ffcc00, #ff6600);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    color: #00f2fe;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.registerbtn {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+}
+
+.loginuserbtn {
+    background: linear-gradient(45deg, #f7971e, #ffd200);
+    color: black;
+}
+
+.loaduserbtn {
+    background: linear-gradient(45deg, #43e97b, #38f9d7);
+}
+
+.loadorders {
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+pre {
+    background: rgba(0,0,0,0.4);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    overflow-x: auto;
+}
+hr {
+    border: 1px solid rgba(255,255,255,0.2);
+}
+</style>
+
 </head>
+
 <body>
-  <h1>AWS DevOps Microservices Project</h1>
 
-  <button onclick="loadUsers()">Load Users</button>
-  <button onclick="loadOrders()">Load Orders</button>
+<div class="container">
 
-  <pre id="result"></pre>
+<h1>🚀 AWS DevOps Microservices Project By Nexgen Team</h1>
 
-  <script src="../src/app.js"></script>
+<hr>
+
+<h2>Register</h2>
+<input type="text" id="regName" placeholder="Name"><br>
+<input type="email" id="regEmail" placeholder="Email"><br>
+<input type="password" id="regPassword" placeholder="Password"><br>
+<button onclick="registerUser()" class="registerbtn">Register</button>
+
+<hr>
+
+<h2>Login</h2>
+<input type="email" id="loginEmail" placeholder="Email"><br>
+<input type="password" id="loginPassword" placeholder="Password"><br>
+<button onclick="loginUser()" class="loginuserbtn">Login</button>
+
+<hr>
+
+<h2>Other Services</h2>
+<button onclick="loadUsers()" class="loaduserbtn">Load Users</button>
+<button onclick="loadOrders()" class="loadorders">Load Orders</button>
+
+<hr>
+
+<pre id="result"></pre>
+
+</div>
+
+<script src="src/app.js"></script>
 </body>
 </html>
