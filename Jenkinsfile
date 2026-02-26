@@ -3,8 +3,8 @@ pipeline {
 
     environment {
         AWS_DEFAULT_REGION = 'us-east-1'
-        S3_BUCKET = 'yashi20'
-        CLOUDFRONT_DISTRIBUTION_ID = 'E23GHHF65LNSP2'
+        S3_BUCKET = 'priya-s3-bucket-update'
+        CLOUDFRONT_DISTRIBUTION_ID = 'E1WSFZMRBNEBBF'
     }
 
     stages {
